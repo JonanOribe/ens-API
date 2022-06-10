@@ -5,9 +5,9 @@ from src.generics.utils_functions import get_config_file_data, json_auto_formatt
 config,config_file = get_config_file_data()
 config.read(config_file)
 
-user:bytes = str.encode('')
-password:bytes = str.encode('')
-mongo_cluster:bytes = str.encode('')
+user:bytes = str.encode('...')
+password:bytes = str.encode('...')
+mongo_cluster:bytes = str.encode('...')
 
 nonce_user,ciphertext_user,tag_user = cipher_data(user)
 nonce_pass,ciphertext_pass,tag_pass = cipher_data(password)
